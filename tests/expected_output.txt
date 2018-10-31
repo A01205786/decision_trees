@@ -1,0 +1,47 @@
+<------------- Test #1 ------------->
+outlook: sunny
+  humidity: high
+    ANSWER: no
+  humidity: normal
+    ANSWER: yes
+outlook: overcast
+  ANSWER: yes
+outlook: rainy
+  windy: TRUE
+    ANSWER: no
+  windy: FALSE
+    ANSWER: yes
+
+<------------- Test #2 ------------->
+tear-prod-rate: reduced
+  ANSWER: none
+tear-prod-rate: normal
+  astigmatism: no
+    age: young
+      ANSWER: soft
+    age: pre-presbyopic
+      ANSWER: soft
+    age: presbyopic
+      spectacle-prescrip: myope
+        ANSWER: none
+      spectacle-prescrip: hypermetrope
+        ANSWER: soft
+  astigmatism: yes
+    spectacle-prescrip: myope
+      ANSWER: hard
+    spectacle-prescrip: hypermetrope
+      age: young
+        ANSWER: hard
+      age: pre-presbyopic
+        ANSWER: none
+      age: presbyopic
+        ANSWER: none
+
+<------------- Test #3 ------------->
+A: TRUE
+  ANSWER: TRUE
+A: FALSE
+  B: TRUE
+    ANSWER: TRUE
+  B: FALSE
+    ANSWER: FALSE
